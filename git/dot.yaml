@@ -1,0 +1,9 @@
+global:
+  installs: false
+
+windows:
+  installs: 
+    cmd: |
+      scoop bucket add main
+      scoop install main/git
+    depends: [../tools/scoop]

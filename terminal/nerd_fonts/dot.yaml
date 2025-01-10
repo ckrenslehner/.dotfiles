@@ -1,0 +1,12 @@
+windows:
+  installs:
+    cmd: |
+      scoop bucket add nerd-fonts
+      scoop install Hack-NF
+      
+    depends: [../tools/scoop]
+linux:
+  installs:
+    cmd: brew install font-hack-nerd-font
+    
+    depends: [../tools/brew]

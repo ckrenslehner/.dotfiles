@@ -1,0 +1,11 @@
+windows:
+  installs:
+    cmd: |
+      scoop bucket add extras
+      scoop install lazygit
+
+    depends: [./tools/scoop]
+linux:
+  installs:
+    cmd: brew install lazygit
+    depends: [./tools/brew]

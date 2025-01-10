@@ -1,0 +1,10 @@
+windows:
+  installs:
+    cmd: |
+      scoop install zoxide
+      
+    depends: [../tools/scoop]
+linux:
+  installs:
+    cmd: brew install zoxide
+    depends: [../tools/brew]

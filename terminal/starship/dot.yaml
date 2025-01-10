@@ -1,0 +1,13 @@
+windows:
+  installs:
+    cmd: |
+      scoop install starship
+      
+    depends: [../tools/scoop]
+linux:
+  installs:
+    cmd: brew install starship
+    depends: [../tools/brew]
+global:
+  links:
+    starship.toml: ~/.config/starship.toml  

@@ -1,0 +1,15 @@
+windows:
+  installs:
+    cmd: |
+      scoop bucket add extras
+      scoop install wezterm
+
+    depends: [../tools/scoop, ./nerd_fonts]
+linux:
+  installs:
+    cmd: brew install --cask wezterm
+    depends: [../tools/brew, ./nerd_fonts]
+
+global:
+  links:
+    .wezterm.lua: ~/.wezterm.lua

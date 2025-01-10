@@ -1,0 +1,8 @@
+windows:
+  installs:
+    cmd: scoop install fzf
+    depends: [../tools/scoop]
+linux:
+  installs:
+    cmd: brew install fzf
+    depends: [../tools/brew]

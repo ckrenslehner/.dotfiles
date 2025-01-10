@@ -1,0 +1,30 @@
+windows:
+  links:
+    config.nu: ~/AppData/Roaming/nushell/config.nu
+
+  installs:
+    cmd: |
+      scoop install nu
+
+      mkdir ~/.cache/starship
+      starship init nu | save ~/.cache/starship/init.nu --force
+
+      mkdir ~/.cache/zoxide
+      zoxide init --cmd cd nushell | save ~/.cache/zoxide/init.nu --force
+    
+    depends: [../tools/scoop, ./starship, ./zoxide, ./fzf]
+linux:
+  links:
+    config.nu: ~/.config/nushell/config.nu
+
+  installs:
+    cmd: |
+      brew install nu
+
+      mkdir ~/.cache/starship
+      starship init nu | save ~/.cache/starship/init.nu --force
+
+      mkdir ~/.cache/zoxide
+      zoxide init --cmd cd nushell | save ~/.cache/zoxide/init.nu --force
+    
+    depends: [../tools/brew, ./starship, ./zoxide, ./fzf]
