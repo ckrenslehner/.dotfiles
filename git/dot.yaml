@@ -1,5 +1,7 @@
 global:
   installs: false
+  links:
+    .gitconfig: ~/.gitconfig
 
 windows:
   installs: 
