@@ -1,0 +1,4 @@
+global:
+  installs:
+    cmd: cargo install --locked bacon
+    depends: [./rust]

@@ -1,0 +1,4 @@
+global:
+  installs:
+    cmd: cargo binstall probe-rs-tools
+    depends: [./cargo-bininstall]

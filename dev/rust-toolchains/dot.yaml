@@ -1,0 +1,6 @@
+global:
+  installs:
+    cmd:  |
+      rustup target add wasm32-unknown-unknown
+      rustup target add thumbv6m-none-eabi
+    depends: [./rust]
