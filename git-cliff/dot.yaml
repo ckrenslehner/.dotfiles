@@ -1,0 +1,8 @@
+windows:
+  installs:
+    cmd: scoop install git-cliff
+    depends: [../tools/scoop]
+linux:
+  installs:
+    cmd: brew install git-cliff
+    depends: [../tools/brew]

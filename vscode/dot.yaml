@@ -1,0 +1,8 @@
+windows:
+  installs:
+    cmd: scoop install vscode
+    depends: [../tools/scoop]
+linux:
+  installs:
+    cmd: brew install --cask visual-studio-code
+    depends: [../tools/brew]

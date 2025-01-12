@@ -1,0 +1,8 @@
+windows:
+  installs:
+    cmd: scoop install just
+    depends: [../tools/scoop]
+linux:
+  installs:
+    cmd: brew install just
+    depends: [../tools/brew]
