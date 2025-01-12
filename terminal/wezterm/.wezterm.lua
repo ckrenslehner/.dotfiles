@@ -17,21 +17,25 @@ end
 -- Window settings
 config.adjust_window_size_when_changing_font_size = false
 config.hide_tab_bar_if_only_one_tab = true
-config.enable_scroll_bar = true
+config.enable_scroll_bar = false
 
 -- Color and font
-config.color_scheme = 'Andromeda'
+-- config.color_scheme = 'Andromeda'
+config.color_scheme = 'Catppuccin Mocha'
 
 config.font = wezterm.font_with_fallback {
 	'FiraCode Nerd Font',
 	'JetBrains Mono',
   }
 
-config.font_size = 10.0
+-- config.font_size = 10.0
 
-config.window_frame = {
- font = wezterm.font { family = 'Noto Sans', weight = 'Regular' },
-}
+-- config.window_frame = {
+--  font = wezterm.font { family = 'Noto Sans', weight = 'Regular' },
+-- }
+
+config.window_close_confirmation = 'NeverPrompt'
+config.use_fancy_tab_bar = false
 
 -- Mouse action
 config.mouse_bindings = {
