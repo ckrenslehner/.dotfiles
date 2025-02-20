@@ -1,0 +1,7 @@
+global:
+  installs:
+    cmd: |
+      cargo install trunk 
+      cargo install leptosfmt
+      cargo install cargo-leptos --locked
+    depends: [./rust]
