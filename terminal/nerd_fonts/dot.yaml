@@ -7,6 +7,6 @@ windows:
     depends: [../tools/scoop]
 linux:
   installs:
-    cmd: brew install font-hack-nerd-font
+    cmd: brew install --cask font-hack-nerd-font
     
     depends: [../tools/brew]
