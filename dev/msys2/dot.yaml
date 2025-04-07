@@ -1,0 +1,9 @@
+windows:
+  installs:
+    cmd: |
+      scoop install main/msys2
+      
+    depends: [../tools/scoop]
+    
+global:
+  installs: false

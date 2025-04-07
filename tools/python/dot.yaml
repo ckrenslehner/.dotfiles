@@ -1,0 +1,10 @@
+windows:
+  installs:
+    cmd: |
+      scoop install python@3.13.2
+
+    depends: [scoop]
+linux:
+  installs:
+    cmd: brew install python@3.13.2
+    depends: [brew]

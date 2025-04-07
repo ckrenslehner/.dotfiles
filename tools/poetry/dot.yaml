@@ -1,0 +1,8 @@
+windows:
+  installs:
+    cmd: pip install poetry
+    depends: [python]
+linux:
+  installs:
+    cmd: pip3 install poetry
+    depends: [python]

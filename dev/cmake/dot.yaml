@@ -1,12 +1,10 @@
 windows:
   installs:
     cmd: |
-      scoop bucket add nerd-fonts
-      scoop install Hack-NF
+      scoop install main/cmake
       
     depends: [../tools/scoop]
 linux:
   installs:
-    cmd: brew install --cask font-hack-nerd-font
-    
+    cmd: brew install cmake
     depends: [../tools/brew]

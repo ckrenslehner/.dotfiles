@@ -1,0 +1,12 @@
+windows:
+  installs:
+    cmd: |
+      pip install grpcio-tools
+      pip install nanopb
+    depends: [../tools/python]
+linux:
+  installs:
+    cmd: |
+      pip3 install grpcio-tools
+      pip3 install nanopb
+    depends: [../tools/python]

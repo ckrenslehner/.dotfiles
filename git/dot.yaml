@@ -8,4 +8,4 @@ windows:
     cmd: |
       scoop bucket add main
       scoop install main/git
-    depends: [../tools/scoop]
+    depends: [./tools/scoop]

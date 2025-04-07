@@ -1,8 +1,7 @@
 windows:
   installs:
     cmd: |
-      scoop bucket add extras
-      scoop install lazygit
+      scoop install extras/lazygit
 
     depends: [./tools/scoop]
 linux:

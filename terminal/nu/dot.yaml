@@ -6,11 +6,11 @@ windows:
     cmd: |
       scoop install nu
 
-      mkdir ~/.cache/starship
-      starship init nu | save ~/.cache/starship/init.nu --force
-
-      mkdir ~/.cache/zoxide
-      zoxide init --cmd cd nushell | save ~/.cache/zoxide/init.nu --force
+      mkdir ~/.cache/starship -f
+      nu -c "starship init nu | save ~/.cache/starship/init.nu --force"
+      
+      mkdir ~/.cache/zoxide -f
+      nu -c "zoxide init --cmd cd nushell | save ~/.cache/zoxide/init.nu --force"
     
     depends: [../tools/scoop, ./starship, ./zoxide, ./fzf]
 linux:
@@ -21,10 +21,10 @@ linux:
     cmd: |
       brew install nu
 
-      mkdir ~/.cache/starship
-      starship init nu | save ~/.cache/starship/init.nu --force
+      mkdir ~/.cache/starship -f
+      nu -c "starship init nu | save ~/.cache/starship/init.nu --force"
 
-      mkdir ~/.cache/zoxide
-      zoxide init --cmd cd nushell | save ~/.cache/zoxide/init.nu --force
+      mkdir ~/.cache/zoxide -f
+      nu -c "zoxide init --cmd cd nushell | save ~/.cache/zoxide/init.nu --force"
     
     depends: [../tools/brew, ./starship, ./zoxide, ./fzf]

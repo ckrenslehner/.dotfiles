@@ -1,8 +1,9 @@
 windows:
   installs:
-    cmd: scoop install vscode
+    cmd: |
+      scoop install main/docker
     depends: [tools/scoop]
 linux:
   installs:
-    cmd: brew install --cask visual-studio-code
+    cmd: brew install docker
     depends: [tools/brew]

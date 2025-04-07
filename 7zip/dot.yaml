@@ -1,8 +1,9 @@
 windows:
   installs:
-    cmd: scoop install vscode
+    cmd: |
+      scoop install main/7zip
     depends: [tools/scoop]
 linux:
   installs:
-    cmd: brew install --cask visual-studio-code
+    cmd: brew install sevenzip
     depends: [tools/brew]

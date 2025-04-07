@@ -3,5 +3,9 @@ windows:
     Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
     irm get.scoop.sh | iex
 
+    scoop bucket add main
+    scoop bucket add extras
+
+
 global:
   installs: false
