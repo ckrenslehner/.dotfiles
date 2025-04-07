@@ -1,0 +1,8 @@
+windows:
+  installs:
+    # Winget should be installed by default
+    winget --version
+
+
+global:
+  installs: false

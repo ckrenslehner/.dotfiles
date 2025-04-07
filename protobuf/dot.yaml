@@ -1,0 +1,9 @@
+windows:
+  installs:
+    cmd: winget install protobuf --accept-source-agreements --accept-package-agreements
+    
+    depends: [tools/winget]
+linux:
+  installs:
+    cmd: brew install protobuf
+    depends: [tools/brew]
