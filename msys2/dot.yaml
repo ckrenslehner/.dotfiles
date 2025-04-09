@@ -3,7 +3,7 @@ windows:
     cmd: |
       scoop install main/msys2
       
-    depends: [../tools/scoop]
+    depends: [tools/scoop]
     
 global:
   installs: false

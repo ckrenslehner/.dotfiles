@@ -1,9 +1,8 @@
 windows:
   installs:
-    cmd: |
-      scoop install main/docker
+    cmd: scoop install extras/postman
     depends: [tools/scoop]
 linux:
   installs:
-    cmd: brew install docker
+    cmd: brew install postman
     depends: [tools/brew]

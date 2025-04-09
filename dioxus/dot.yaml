@@ -1,6 +1,6 @@
 global:
   installs:
-    cmd: cargo install dioxus-cli
+    cmd: cargo binstall dioxus-cli
     depends: 
       - ./cargo-bininstall
       - ./cmake

@@ -1,0 +1,10 @@
+windows:
+  installs:
+    cmd: |
+      scoop install main/llvm
+
+    depends: [./tools/scoop]
+linux:
+  installs:
+    cmd: brew install llvm
+    depends: [./tools/brew]
